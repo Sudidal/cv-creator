@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  --primary-background-color: rgb(240, 240, 240);
+  --primary-text-color: black;
+  --secondary-text-color: white;
+}
+.container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  color: var(--primary-text-color);
+}
+.block {
+  box-shadow: 5px 5px 8px rgba(182, 182, 182, 0.623);
+  background-color: var(--primary-background-color);
+  padding: 30px;
+}
+.cv-form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 2;
+}
+.cv-form legend {
+  margin-bottom: 10px;
+}
+.cv-form .input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.cv-form .input-box {
+  flex-basis: 40%;
+  flex-grow: 1;
+  flex-shrink: 2;
+  display: flex;
+  flex-direction: column;
+}
+.cv-form input {
+  height: 35px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.results-box {
+  flex: 1;
+}
+.results-box .download-btn {
+  width: 150px;
+  height: 35px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition-property: transform letter-spacing;
+  transition-duration: 200ms;
+}
+.results-box .download-btn:hover {
+  transform: scale(1.1);
+  letter-spacing: 1.5px;
+  background-color: rgb(80, 218, 80);
+  box-shadow: 5px 5px 5px rgba(182, 182, 182, 0.76);
+}
+
+@media print {
+  .container > *:not(.printable){
+    display: none;
+  }
+  .not-printable {
+    display: none;
+  }
+  .container {
+    justify-content: flex-start;
+  }
+}
