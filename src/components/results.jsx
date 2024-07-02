@@ -1,7 +1,7 @@
 import { printPage } from "../printResult";
 
 function Results({ values }) {
-  const photoPlaceHolderUrl = "/public/Placeholder_view_vector.svg";
+  const photoPlaceHolderUrl = "/Placeholder_view_vector.svg";
   let img = photoPlaceHolderUrl;
 
   values.forEach((val) => {

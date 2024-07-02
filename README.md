@@ -1,7 +1,6 @@
 # react-template
 
-My template for react apps equiped with:
+My template for react apps equipped with:
 * vite
 * react
-* webpack
 * eslint
